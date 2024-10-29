@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  max-width: 1200px;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  max-width: auto;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column ;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 142px;
+  
+}
+
+.logo{
+  Width: 73.2px;
+  Height: 105px;
+}
+
+nav{
+  display: flex;
+  
+}
+
+.nav_teas
+
+.nav_tea{
+  margin-right: 65px;
+}
+
+.header_manage{
+  display: flex;
+}
+
+.banner{
+
+}
