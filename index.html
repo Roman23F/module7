@@ -11,105 +11,127 @@
   <header>
     
 
-    <nav class="header-nav">
+    <nav class="nav-header">
 
       <img src="./images/Logo.svg" alt="Логотип" class="logo">
 
-      <ol class="nav-ol">
+      <ol class="nav-header__menu">
         <li>
-          <a href="#" class="nav-ol__list">Black</a>
+          <a href="#" class="menu-header__btn">Black</a>
         </li>
         <li>
-          <a href="#" class="nav-ol__list">Green</a>
+          <a href="#" class="menu-header__btn">Green</a>
         </li>
         <li>
-          <a href="#" class="nav-ol__list">White</a>
+          <a href="#" class="menu-header__btn">White</a>
         </li>
         <li>
-          <a href="#" class="nav-ol__list">Oolong</a>
+          <a href="#" class="menu-header__btn">Oolong</a>
         </li>
         <li>
-          <a href="#" class="nav-ol__list">Pu-erh</a>
+          <a href="#" class="menu-header__btn">Pu-erh</a>
         </li>
       </ol>
 
-      <div class="nav-manage">
-        <a href="#" class="nav-manage__btn"><img src="./images/basket.svg" alt="корзина"></a>
-        <a href="#" class="nav-manage__btn"><img src="./images/user.svg" alt="Пользователь"></a>
+      <div class="nav-header__manage">
+
+        <div class="manage-header__account">
+          <a href="#" class="account-header__btn"><img src="./images/basket.svg" alt="корзина"></a>
+          <a href="#" class="account-header__btn"><img src="./images/user.svg" alt="Пользователь"></a>
+        </div>
+
+        <a href="#"><img src="./images/search.png" alt="Поиск" class="manage-header__search"></a>
+
       </div>
-    
-      <a href="#"><img src="./images/search.png" alt="Поиск" class="nav-search"></a>
 
     </nav>
 
-    <img src="./images/banner.png" alt="Заголовок" class="banner">
+    <div  class="banner">
+      <h1>A cup of tea is a moment of calm in the chaos of life</h1>
+      <p  class="banner-p">Wide selection of high-quality teas from all over the world, carefully curated by tea experts</p>
+    </div>
+
 
   </header>
 
 <main>
 
-  <h1>"Tea is not just a drink, it's a way of life and a way to connect with our loved ones."</h1>
-  <section>
-    <h2>Explore our Collections</h2>
-    <div>
-      <div>
-        <img src="./images/black_tea.png" alt="Черный чай">
-        <p></p>
+  <h2>"Tea is not just a drink, it's a way of life and a way to connect with our loved ones."</h2>
+
+  <section class="main-section__products">
+
+    <h3>Explore our Collections</h3>
+
+    <div class="main-section__cards">
+
+      <div class="main-products__card">
+        <img src="./images/black_tea.png" alt="Черный чай" class="products-card__image">
+        <p class="products-card__name">Black</p>
       </div>
-      <div>
-        <img src="./images/green_tea.png" alt="Зеленый чай">
-        <p></p>
+
+      <div class="main-products__card">
+        <img src="./images/green_tea.png" alt="Зеленый чай" class="products-card__image">
+        <p class="products-card__name">Green</p>
       </div>
-      <div>
-        <img src="./images/white_tea.png" alt="Белый чай">
-        <p></p>
+
+      <div class="main-products__card">
+        <img src="./images/white_tea.png" alt="Белый чай" class="products-card__image">
+        <p class="products-card__name">White</p>
       </div>
-      <div>
-        <img src="./images/oolong.png" alt="Улун">
-        <p></p>
+
+      <div class="main-products__card">
+        <img src="./images/Oolong_tea.png" alt="Улун" class="products-card__image">
+        <p class="products-card__name">Oolong</p>
       </div>
-      <div>
-        <img src="./images/pu-erh_tea.png" alt="Пу-эр">
-        <p></p>
-      </div>
+
+      <div class="main-products__card">
+        <img src="./images/pu-erh_tea.png" alt="Пу-эр" class="products-card__image">
+        <p class="products-card__name">Pu-erh</p>
+      </div class="main-products__card">
+
     </div>
+
   </section>
   
-  <section>
-    <h2>What our Clients say</h2>
-    <div>
-      <div>
-        <p>
+  <section class="main-section__reviews">
+
+    <h3>What our Clients say</h3>
+    
+    <div class="main-reviews__cards">
+      
+      <div class="main-reviews__card">
+        <p class="reviews-card__review">
           "As a tea enthusiast, I have tried teas from all over the world,
           but this tea store truly stands out. Their teas are of the highest
           quality and the variety is impressive. This is definitely a tea
           store that every tea lover should visit."
         </p>
-        <b>Alice</b>
+        <b class="reviews-card__reviewer">Alice</b>
       </div>
 
-      <div>
-        <p>
+      <div class="main-reviews__card">
+        <p class="reviews-card__review">
           "This tea store is my go-to for all my tea needs. Their selection
           is unbeatable and the quality of their teas is exceptional."
         </p>
-        <b>Mad-Hatter</b>
+        <b class="reviews-card__reviewer">Mad-Hatter</b>
       </div>
 
-      <div>
-        <p>
+      <div class="main-reviews__card">
+        <p class="reviews-card__review">
           "If you're a tea lover, you must visit this tea store.
           The selection is vast and the quality is outstanding.
           I guarantee you won't be disappointed."
         </p>
-        <b>Dormouse</b>
+        <b class="reviews-card__reviewer">Dormouse</b>
       </div>
-      <div>
-        <p>
+
+      <div class="main-reviews__card">
+        <p class="reviews-card__review">
           "I am not a big tea drinker, but this tea store has converted me.
           I highly recommend this tea store to anyone looking for a high-quality tea experience."
         </p>
-        <b>March Hare</b>
+        <b class="reviews-card__reviewer">March Hare</b>
       </div>
 
 
@@ -118,7 +140,7 @@
 
   <section>
 
-    <h2>Our Tea Blog</h2>
+    <h3>Our Tea Blog</h3>
 
     <div>
 
@@ -175,7 +197,7 @@
   </section>
 
   <section>
-    <h2>Want to know more?</h2>
+    <h3>Want to know more?</h3>
     <div>
       <p>
         Join our mailing list and stay up-to-date with the latest news,
@@ -196,7 +218,7 @@
   </section>
 
   <section>
-    <h2></h2>
+    <h3></h3>
     <div>
       <div>
         <h3>Single garden teas</h3>
