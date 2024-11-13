@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tea</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./scripts/script.js"></script>
 </head>
 <body>
 
@@ -13,34 +14,41 @@
 
     <nav class="nav-header">
 
-      <img src="./images/Logo.svg" alt="Логотип" class="logo">
+      <img src="./images/Logo.svg" alt="Логотип" class="nav-header__logo">
 
-      <ol class="nav-header__menu">
-        <li>
-          <a href="#" class="nav-header__btn">Black</a>
-        </li>
-        <li>
-          <a href="#" class="nav-header__btn">Green</a>
-        </li>
-        <li>
-          <a href="#" class="nav-header__btn">White</a>
-        </li>
-        <li>
-          <a href="#" class="nav-header__btn">Oolong</a>
-        </li>
-        <li>
-          <a href="#" class="nav-header__btn">Pu-erh</a>
-        </li>
-      </ol>
+      <div class="nav-header__menu">
 
-      <div class="nav-header__manage">
-
-        <div class="nav-header__account">
-          <a href="#" class="nav-header__account-btn"><img src="./images/basket.svg" alt="корзина"></a>
-          <a href="#" class="nav-header__account-btn"><img src="./images/user.svg" alt="Пользователь"></a>
+        <ol class="nav-header__ol">
+          <li>
+            <a href="#" class="nav-header__btn">Black</a>
+          </li>
+          <li>
+            <a href="#" class="nav-header__btn">Green</a>
+          </li>
+          <li>
+            <a href="#" class="nav-header__btn">White</a>
+          </li>
+          <li>
+            <a href="#" class="nav-header__btn">Oolong</a>
+          </li>
+          <li>
+            <a href="#" class="nav-header__btn">Pu-erh</a>
+          </li>
+        </ol>
+  
+        <div class="nav-header__manage">
+  
+          <div class="nav-header__account">
+            <a href="#" class="nav-header__account-btn"><img src="./images/basket.svg" alt="корзина"></a>
+            <a href="#" class="nav-header__account-btn"><img src="./images/user.svg" alt="Пользователь"></a>
+          </div>
+  
+          <div class="search-container">
+            <input type="text" class="search-input" style="display: none;">
+            <img src="./images/search.svg" alt="Поиск" class="nav-header__search" onclick="showInput()">
+          </div>
+  
         </div>
-
-        <a href="#"><img src="./images/search.png" alt="Поиск" class="nav-header__search"></a>
 
       </div>
 
@@ -276,26 +284,34 @@
     <div class="priorities__cards">
 
       <div class="priorities__card">
-        <p class="priorities__p">Single garden teas</p>
-        <b class="priorities__b">Complete transparency</b>
+        <div class="priorities__text">
+          <p class="priorities__p">Single garden teas</p>
+          <b class="priorities__b">Complete transparency</b>
+        </div>
         <img src="./images/earth.png" alt="планета" class="priorities__image">
       </div>
 
       <div class="priorities__card">
-        <p class="priorities__p">Only Loose leaf tea</p>
-        <b class="priorities__b">Best Drinking Experience</b>
+        <div class="priorities__text">
+          <p class="priorities__p">Only Loose leaf tea</p>
+          <b class="priorities__b">Best Drinking Experience</b>
+        </div>
         <img src="./images/leaf.png" alt="лист" class="priorities__image">
       </div>
 
       <div class="priorities__card">
-        <p class="priorities__p">Customer support</p>
-        <b class="priorities__b">No bots, no automated replies</b>
+        <div class="priorities__text">
+          <p class="priorities__p">Customer support</p>
+          <b class="priorities__b">No bots, no automated replies</b>
+        </div>
         <img src="./images/headphones.png" alt="наушники" class="priorities__image">
       </div>
 
       <div class="priorities__card">
-        <p class="priorities__p">Fast shipping</p>
-        <b class="priorities__b">Save, Convenient, Reliable</b>
+        <div class="priorities__text">
+          <p class="priorities__p">Fast shipping</p>
+          <b class="priorities__b">Save, Convenient, Reliable</b>
+        </div>
         <img src="./images/box.png" alt="коробка" class="priorities__image">
       </div>
 

@@ -19,14 +19,19 @@ body{
 }
 
 header{
+  padding-top: 30px;
   width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
 }
 
-.logo{
-  max-width: 6%;
-  width: 73px;
-  Height: 105px;
-  margin-right: 75px;
+.nav-header__logo{
+  width: 73.2px;
+  height: 105px;
+  align-self: baseline;
 }
 
 .nav-header{
@@ -34,17 +39,28 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 37px;
-  margin: 30px auto 30px auto;
-  width: 75%;
+  width: 1200px;
+  height: 142px;
+
 }
 
 .nav-header__menu{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 886.62px;
+}
+
+.nav-header__ol{
   list-style: none;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 46%;
+  width: Fixed (555px)px;
+  height: Hug (27px)px;
+  gap: 65px;
+  padding-right: 27px;
+  
 
 }
 
@@ -56,29 +72,55 @@ header{
 }
 
 .nav-header__manage{
-  width: 15%;
   display: flex;
   justify-content: space-between;
+  width: Hug (180px)px;
+  height: Hug (29px)px;
+
 }
 
 .nav-header__account{
   display: flex;
   justify-content: space-between;
-  width: 58px;
+  width: Hug (58px)px;
+  height: Fixed (29px)px;
+  gap: 20px;
+
+  
 }
 
 .nav-header__account-btn{
   width: 20px;
   height: 22px;
 
+  
 
+
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  width: 122px;
+  justify-content: flex-end;
+  gap: 1px;
+}
+
+.search-input{
+  width: 50px;
+  height: 18px;
+  border: 2px solid black;
+  border-radius: 8px;
+  justify-self: center;
 }
 
 .nav-header__search{
-  width: 20px;
+  width: 22px;
   height: 22px;
-
+  cursor: pointer;
 }
+
+
 
 
 
@@ -95,31 +137,40 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-left: 199.88px;
-  padding-bottom: 48px;
-  margin-bottom: 150px;
+  gap: 20px;
 
 }
 
+
+
 h1{
-  font-size: 60px;
-  font-weight: 400; 
   width: 789.51px;
   height: 120px;
+  font-family: Cormorant;
+  font-size: 60px;
+  font-weight: 400;
   line-height: 60px;
   text-align: left;
-  padding-bottom: 20px;
-
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 199.88px;
 }
 
 .header-banner__p{
-  font-size: 24px;
-  font-weight: 400;
   width: 557.65px;
   height: 58px;
+  top: 594px;
+  left: 199.88px;
+
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 29.06px;
   text-align: left;
-  
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 199.88px;
+  padding-bottom: 48px;
 }
 
 
@@ -130,20 +181,48 @@ main{
   width: 100%;
   gap: 150px;
   padding-bottom: 150px;
+  padding-top: 120px;
 }
 
 
-h2{
+/* h2{
   width: 704px;
   height: 96px;
-  top: 850px;
-  left: 448px;
   font-family: Cormorant;
   font-size: 40px;
   font-style: italic;
   font-weight: 300;
   line-height: 48.44px;
   text-align: center;
+} */
+
+
+h2 {
+  position: relative;
+  width: 704px;
+  height: 96px;
+  font-family: Cormorant;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 48.44px;
+  text-align: center;
+
+
+
+
+}
+
+h2::after {
+  content: ''; 
+  position: absolute;
+  bottom: -15px;
+  right: -40px;
+  width: 359px;
+  height: 61px;
+  background-color: rgba(247, 242, 234, 1);
+  z-index: -1;
+  opacity: 0.5px;
 }
 
 
@@ -165,6 +244,10 @@ h2{
   font-weight: 400;
   line-height: 48.44px;
   text-align: center;
+
+  width: 369px;
+  height: 48px;
+
 }
 
 .products__cards{
@@ -396,8 +479,8 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 75%;
-  height: 52.15%;
+  width: 1200px;
+  height: 218px;
 
 }
 
@@ -520,7 +603,7 @@ h2{
   align-items: center;
   justify-content: space-between;
 
-  width: 75%;
+  width: 1200px;
   height: 286px;
   
 }
@@ -562,6 +645,13 @@ h2{
   width: auto;
   height: 178px;
 
+}
+
+.priorities__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 78px;
 }
 
 .priorities__p{
@@ -607,6 +697,7 @@ footer{
 }
 
 .nav-footer{
+  padding-top: 100px;
   width: 1200px;
   display: flex;
   flex-direction: row;
@@ -911,3 +1002,6 @@ padding-left: 97px;
   opacity: 0px;
   
 }
+
+
+
