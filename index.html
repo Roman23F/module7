@@ -5,62 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tea</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="./scripts/script.js"></script>
 </head>
 <body>
 
-  <header>
-    
+<header>
 
     <nav class="nav-header">
 
-      <img src="./images/Logo.svg" alt="Логотип" class="nav-header__logo">
+      <div class="overlay" id="overlay"></div>
 
-      <div class="nav-header__menu">
+      <img src="./images/menu.png" alt="меню" class="nav-header__burger" id="burgerMenu">
 
-        <ol class="nav-header__ol">
-          <li>
-            <a href="#" class="nav-header__btn">Black</a>
-          </li>
-          <li>
-            <a href="#" class="nav-header__btn">Green</a>
-          </li>
-          <li>
-            <a href="#" class="nav-header__btn">White</a>
-          </li>
-          <li>
-            <a href="#" class="nav-header__btn">Oolong</a>
-          </li>
-          <li>
-            <a href="#" class="nav-header__btn">Pu-erh</a>
-          </li>
-        </ol>
-  
-        <div class="nav-header__manage">
-  
-          <div class="nav-header__account">
-            <a href="#" class="nav-header__account-btn"><img src="./images/basket.svg" alt="корзина"></a>
-            <a href="#" class="nav-header__account-btn"><img src="./images/user.svg" alt="Пользователь"></a>
+      <div class="modal-menu" id="menu">
+
+        <img src="./images/close.svg" class="modal-close" id="modalClose">
+
+          <ul class="modal-products">
+            <li><a href="#" class="modal-products__li">Black</a></li>
+            <li><a href="#" class="modal-products__li">Green</a></li>
+            <li><a href="#" class="modal-products__li">White</a></li>
+            <li><a href="#" class="modal-products__li">Oolong</a></li>
+            <li><a href="#" class="modal-products__li">Pu-erh</a></li>
+          </ul>
+
+          <hr class="modal-hr">
+
+          <ul class="modal-nav">
+            <li><a href="#" class="modal-nav__li">Contact Us</a></li>
+            <li><a href="#" class="modal-nav__li">Our Blog</a></li>
+            <li><a href="#" class="modal-nav__li">Shipping and Delivery</a></li>
+          </ul>
+
+          <div class="modal-manage">
+            <a href="#" class="modal-manage__btn"><img src="./images/basket.svg" alt="корзина"></a>
+            <a href="#" class="modal-manage__btn"><img src="./images/user.svg" alt="Пользователь"></a>
+            <a href="#" class="modal-manage__btn"><img src="./images/search.svg" alt="Поиск"></a>
           </div>
-  
-          <div class="search-container">
-            <input type="text" class="search-input" style="display: none;">
-            <img src="./images/search.svg" alt="Поиск" class="nav-header__search" onclick="showInput()">
-          </div>
-  
-        </div>
-
+          
       </div>
 
+        <div class="nav-header__logo">
+            <img src="./images/logo.svg" alt="Логотип" class="nav-header__logo-img">
+            <p class="nav-header__logo-p">TealuxE</p>
+        </div>
+
+        <div class="nav-header__menu">
+
+            <ol class="nav-header__ol">
+                <li><a href="#" class="nav-header__btn">Black</a></li>
+                <li><a href="#" class="nav-header__btn">Green</a></li>
+                <li><a href="#" class="nav-header__btn">White</a></li>
+                <li><a href="#" class="nav-header__btn">Oolong</a></li>
+                <li><a href="#" class="nav-header__btn">Pu-erh</a></li>
+            </ol>
+
+            <div class="nav-header__manage">
+
+                <div class="nav-header__account">
+                    <a href="#" class="nav-header__account-btn"><img src="./images/basket.svg" alt="корзина"></a>
+                    <a href="#" class="nav-header__account-btn"><img src="./images/user.svg" alt="Пользователь"></a>
+                </div>
+
+                <a class="search-container">
+                    <img src="./images/search.svg" alt="Поиск" class="nav-header__search">
+                </a>
+
+            </div>
+
+        </div>
     </nav>
 
-    <div  class="header-banner">
-      <h1>A cup of tea is a moment of calm in the chaos of life</h1>
-      <p  class="header-banner__p">Wide selection of high-quality teas from all over the world, carefully curated by tea experts</p>
+    <div class="header-banner">
+        <div class="header-banner__title">
+            <h1>A cup of tea is a moment of calm in the chaos of life</h1>
+            <p class="header-banner__p">Wide selection of high-quality teas from all over the world, carefully curated by tea experts.</p>
+        </div>
     </div>
-
-
-  </header>
+</header>
 
 <main>
 
@@ -87,7 +108,7 @@
         <p class="products__name">White</p>
       </div>
 
-      <div class="products__card">
+      <div class="products__card products__card-fourth">
         <img src="./images/Oolong_tea.png" alt="Улун" class="products__image">
         <p class="products__name">Oolong</p>
       </div>
@@ -107,7 +128,7 @@
     
     <div class="reviews__cards">
       
-      <div class="reviews__card">
+      <div class="reviews__card reviews__card-first">
         <p class="reviews__review">
           "As a tea enthusiast, I have tried teas from all over the world,
           but this tea store truly stands out. Their teas are of the highest
@@ -117,7 +138,7 @@
         <b class="reviews__reviewer">Alice</b>
       </div>
 
-      <div class="reviews__card">
+      <div class="reviews__card reviews__card-second">
         <p class="reviews__review">
           "This tea store is my go-to for all my tea needs. Their selection
           is unbeatable and the quality of their teas is exceptional."
@@ -125,7 +146,7 @@
         <b class="reviews__reviewer">Mad-Hatter</b>
       </div>
 
-      <div class="reviews__card">
+      <div class="reviews__card reviews__card-third">
         <p class="reviews__review">
           "If you're a tea lover, you must visit this tea store.
           The selection is vast and the quality is outstanding.
@@ -134,7 +155,7 @@
         <b class="reviews__reviewer">Dormouse</b>
       </div>
 
-      <div class="reviews__card">
+      <div class="reviews__card reviews__card-fourth">
         <p class="reviews__review">
           "I am not a big tea drinker, but this tea store has converted me.
           I highly recommend this tea store to anyone looking for a high-quality tea experience."
@@ -153,7 +174,7 @@
 
     <div class="blog__cards">
 
-      <div class="blog__card">
+      <div class="blog__card blog__odd">
 
         <img src="./images/kettle_bench.png" alt="Чайник и чашка" class="blog__image">
 
@@ -173,7 +194,7 @@
 
       </div>
 
-      <div class="blog__card">
+      <div class="blog__card blog__even">
 
         <img src="./images/man.png" alt="Человек" class="blog__image">
 
@@ -193,7 +214,7 @@
 
       </div>
 
-      <div class="blog__card">
+      <div class="blog__card blog__odd">
 
         <img src="./images/book.png" alt="Книга" class="blog__image">
 
@@ -214,7 +235,7 @@
 
       </div>
 
-      <div class="blog__card">
+      <div class="blog__card blog__even">
 
         <img src="./images/kettle_table.png" alt="Чайник и чашка" class="blog__image">
 
@@ -235,12 +256,17 @@
       </div>
 
     </div>
-    <a href="#" class="blog__btn">View all</a>
+
+    <button class="blog__btn">View all</button>
+
   </section>
 
   <section class="question">
 
+
+
     <div class="question__conteiner">
+      
       <h3 class="question__h3">Want to know more?</h3>
 
       <div class="question__content">
@@ -256,7 +282,7 @@
   
           <form id="myForm" class="question__form">
             <input type="text" placeholder="name@email.com" class="question__input">
-            <button type="submit" class="question__btn">join</button>
+            <button type="submit" class="question__btn">Join</button>
           </form>
 
           <div class="question__checkbox">
@@ -283,7 +309,7 @@
 
     <div class="priorities__cards">
 
-      <div class="priorities__card">
+      <div class="priorities__card-earth">
         <div class="priorities__text">
           <p class="priorities__p">Single garden teas</p>
           <b class="priorities__b">Complete transparency</b>
@@ -291,7 +317,7 @@
         <img src="./images/earth.png" alt="планета" class="priorities__image">
       </div>
 
-      <div class="priorities__card">
+      <div class="priorities__card-leaf">
         <div class="priorities__text">
           <p class="priorities__p">Only Loose leaf tea</p>
           <b class="priorities__b">Best Drinking Experience</b>
@@ -299,7 +325,7 @@
         <img src="./images/leaf.png" alt="лист" class="priorities__image">
       </div>
 
-      <div class="priorities__card">
+      <div class="priorities__card-hp">
         <div class="priorities__text">
           <p class="priorities__p">Customer support</p>
           <b class="priorities__b">No bots, no automated replies</b>
@@ -307,7 +333,7 @@
         <img src="./images/headphones.png" alt="наушники" class="priorities__image">
       </div>
 
-      <div class="priorities__card">
+      <div class="priorities__card-box">
         <div class="priorities__text">
           <p class="priorities__p">Fast shipping</p>
           <b class="priorities__b">Save, Convenient, Reliable</b>
@@ -318,6 +344,8 @@
     </div>
 
   </section>
+
+  <script src="./scripts/script.js"></script>
 
 </main>
 
@@ -370,10 +398,10 @@
               <a href="#" class="nav-footer__a">Shipping & Delivery</a>
             </li>
             <li>
-              <a href="#" class="nav-footer__a">Refund Policy</a>
+              <a href="#" class="nav-footer__a">Refund policy</a>
             </li>
             <li>
-              <a href="#" class="nav-footer__a">Terms of Serbvice</a>
+              <a href="#" class="nav-footer__a">Terms of Service</a>
             </li>
           </ol>
         </div>
@@ -401,19 +429,22 @@
             </p>
   
             <div class="nav-footer__message-addresses">
-  
-              <img src="./images/Logo.svg" alt="Логотип" class="nav-footer__logo">
+              <div class="nav-footer__logo">
+                <img src="./images/logo.svg" alt="Логотип" class="nav-footer__logo-img">
+                <p class="nav-footer__logo-p">TealuxE</p>
+              </div>
+
     
               <address class="nav-footer__address">
   
-                  <a href="mailto:info@tealuxe.com" class="nav-footer__email">
-                    <img src="./images/message.png" alt="email" class="nav-footer__email-image">
-                    info@tealuxe.com
+                  <a href="tel:+370 680 123456" class="nav-footer__phone">
+                    <img src="./images/message.png" alt="email" class="nav-footer__phone-image">
+                    +370 680 123456
                   </a>
     
-                  <a href="tel:+370 680 123456" class="nav-footer__phone">
-                    <img src="./images/phone.png" alt="Телефон" class="nav-footer__phone-image">
-                    +370 680 123456
+                  <a href="mailto:info@tealuxe.com" class="nav-footer__email">
+                    <img src="./images/phone.png" alt="Телефон" class="nav-footer__email-image">
+                    info@tealuxe.com
                   </a>
   
                 </address>
@@ -439,9 +470,30 @@
   
     </nav>
 
-    <div class="nav-footer__other">
-      <p class="nav-footer__sign">© Tealuxe, 2023</p>
-      <img src="./images/Frame 25.png" alt="Оплата" class="nav-footer__payment"> 
+    <div class="other-footer">
+
+      <p class="other-footer__sign">© Tealuxe, 2023</p>
+
+      <div class="other-footer__payment">
+
+        <a href="#" class="other-footer__mastercard">
+          <img src="./images/mastercard.svg" alt="mastercard">
+        </a>
+
+        <a href="#" class="other-footer__visa">
+          <img src="./images/visa.svg" alt="visa">
+        </a>
+
+        <a href="#" class="other-footer__google_pay">
+          <img src="./images/google_pay.svg" alt="google pay">
+        </a>
+
+        <a href="#" class="other-footer__paypal">
+          <img src="./images/paypal.svg" alt="paypal">
+        </a>
+
+      </div>
+
     </div>
 
 
